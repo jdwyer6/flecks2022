@@ -53,6 +53,21 @@
   font-family: "Oooh Baby", cursive;
 }
 
+.card {
+  max-width: 18rem;
+}
+
+.card-appliance .card-body .card-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: rgb(14, 66, 66);
+  border-bottom: 1px solid rgb(192, 192, 192);
+  padding-bottom: 20px;
+}
+.card-appliance .card-body .card-text {
+  font-size: 12px;
+}
+
 @media only screen and (min-width: 1800px) {
   .card {
     min-width: 20vw;

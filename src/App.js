@@ -1,9 +1,10 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import FeaturedProductsPage from './pages/FeaturedProductsPage';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import KitchenPage from './pages/KitchenPage';
 
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
                     </Route>
                     <Route path='/ContactPage'>
                         <ContactPage />
+                    </Route>
+                    <Route path='/KitchenPage'>
+                        <KitchenPage />
                     </Route>
                 </Switch>
             </div>

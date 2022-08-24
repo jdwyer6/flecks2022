@@ -62,9 +62,31 @@ $color-yellow: rgb(228, 170, 44);
     }
 }
 
+.card{
+    max-width: 18rem;
+}
+
+.card-appliance{
+
+    .card-body{
+
+        .card-title{
+            font-size: 16px;
+            font-weight: 800;
+            color: rgb(14, 66, 66);
+            border-bottom: 1px solid $color-gray-dark;
+            padding-bottom: 20px;
+        }
+
+        .card-text{
+            font-size: 12px;
+        }
+    }
+}
+
 @media only screen and (min-width: 1800px) {
     .card {
       min-width: 20vw;
     }
-  }
+}
 

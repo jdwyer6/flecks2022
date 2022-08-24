@@ -1,6 +1,7 @@
 import { Card, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
-const PagesCard = ({title, subtitle, image}) => {
+const PagesCard = ({title, subtitle, image, link}) => {
     return ( 
         <Card className='mx-auto my-3 rounded-0 p-3'
         style={{
@@ -21,9 +22,12 @@ const PagesCard = ({title, subtitle, image}) => {
             >
                 {subtitle}
             </CardSubtitle>
-            <Button className='my-3'>
-              See more
-            </Button>
+            <Link to={link} className='text-center'>
+                <Button className='my-3'>
+                  See more
+                </Button>
+            </Link>
+
         </CardBody>
     </Card>
      );
