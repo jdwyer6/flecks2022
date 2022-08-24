@@ -31,6 +31,7 @@ $color-yellow: rgb(228, 170, 44);
 
 .card{
     border-radius: 0px;
+    width: 20rem;
 }
 
 .history-container{
@@ -62,11 +63,8 @@ $color-yellow: rgb(228, 170, 44);
     }
 }
 
-.card{
-    max-width: 18rem;
-}
-
 .card-appliance{
+    border: none;
 
     .card-body{
 
@@ -84,9 +82,10 @@ $color-yellow: rgb(228, 170, 44);
     }
 }
 
-@media only screen and (min-width: 1800px) {
-    .card {
-      min-width: 20vw;
-    }
-}
 
+
+// @media only screen and (min-width: 1800px) {
+//     .card {
+//       min-width: 20vw;
+//     }
+// }

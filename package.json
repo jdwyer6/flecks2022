@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.0",
+    "framer-motion": "^7.2.1",
     "nightmare": "^3.0.2",
     "nightmare-react-utils": "^1.0.4",
     "puppeteer": "^16.2.0",

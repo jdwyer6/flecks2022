@@ -1,10 +1,10 @@
-import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import FeaturedProductsPage from './pages/FeaturedProductsPage';
 import KitchenPage from './pages/KitchenPage';
+import './App.css';
 
 
 function App() {

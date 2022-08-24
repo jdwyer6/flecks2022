@@ -19,7 +19,7 @@ const ReviewsSection = () => {
                     author={'Adam from Google Maps'}
                 />
                 <ReviewCard 
-                    title={'Great deal and great info'} 
+                    title={'Great customer service'} 
                     message={'Went looking for a dryer and was surprised to find this awesome place with great customer service. No pressure from the service person, only wonderful info. We walked out with a great deal and will be shopping here again.'} 
                     author={'Mary from Google Maps'}
                 />
