@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
-import FeaturedProductsPage from './pages/FeaturedProductsPage';
 import KitchenPage from './pages/KitchenPage';
+import LaundryPage from './pages/LaundryPage';
 import './App.css';
 
 
@@ -17,14 +17,14 @@ function App() {
                     <Route exact path='/'>
                         <HomePage />
                     </Route>
-                    <Route path='/FeaturedProductsPage'>
-                        <FeaturedProductsPage />
+                    <Route path='/KitchenPage'>
+                        <KitchenPage />
+                    </Route>
+                    <Route path='/LaundryPage'>
+                        <LaundryPage />
                     </Route>
                     <Route path='/ContactPage'>
                         <ContactPage />
-                    </Route>
-                    <Route path='/KitchenPage'>
-                        <KitchenPage />
                     </Route>
                 </Switch>
             </div>

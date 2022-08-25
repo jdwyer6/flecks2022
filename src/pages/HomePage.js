@@ -3,11 +3,11 @@ import History from '../sections/HistorySection'
 import FeaturedProducts from '../sections/FeaturedProductsSection'
 import ReviewSection from '../sections/ReviewSection';
 
-const HomePage = () => {
+const HomePage = ({setCurrentSearch}) => {
     return ( 
         <>
             <Header />
-            <FeaturedProducts />
+            <FeaturedProducts setCurrentSearch={setCurrentSearch}/>
             <History />
             <ReviewSection />
         </>

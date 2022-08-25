@@ -6,15 +6,17 @@ const Navigation = () => {
         <div>
             <Navbar className='d-flex justify-content-between nav-container py-1'>
                 <Nav>
-                        <Link to="/" className='text-black text-decoration-none fs-2 brand-title'>Flecks Appliance Center</Link>
+                    <Link to="/" className='text-black text-decoration-none fs-2 brand-title'>Flecks Appliance Center</Link>
                 </Nav>
                 <Nav>
                     <NavItem>
-                            <Link to='/FeaturedProductsPage' className='text-black text-decoration-none mx-3 fw-light'>Featured Products</Link>
-                  </NavItem>
-
+                        <Link to='/' className='text-black text-decoration-none mx-3 fw-light'>Home</Link>
+                    </NavItem>
                     <NavItem>
-                            <Link to='/ContactPage' className='text-black text-decoration-none mx-3 fw-light'>Contact us</Link>
+                        <Link to='/FeaturedProductsPage' className='text-black text-decoration-none mx-3 fw-light'>Featured Products</Link>
+                  </NavItem>
+                    <NavItem>
+                        <Link to='/ContactPage' className='text-black text-decoration-none mx-3 fw-light'>Contact us</Link>
                     </NavItem>
                 </Nav>
             </Navbar>
