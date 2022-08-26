@@ -26,7 +26,7 @@ const FeaturedProductsPage = () => {
                 <p>Prices and availability are subject to change. Please contact our store for up-to-date pricing, sales, and special offers.</p>
             </Row>
             <Row>
-                <img src={HeroImage} className='kitchen-hero-image'></img>
+                <img src={HeroImage} className='featured-product-hero-image'></img>
             </Row>
             <Row className='mt-5'>
                 <h4>Search and filter</h4>
@@ -38,7 +38,7 @@ const FeaturedProductsPage = () => {
                 </form>
             </Row>
             <Row>
-                <div className='d-flex flex-wrap justify-content-evenly my-3 filter-container'>
+                <div className='d-flex flex-wrap justify-content-between my-3 filter-container'>
                     <Button className={activeType === 'All' ? "active my-1" : 'my-1'} onClick={() => setActiveType('All')}>All</Button>
                     <Button className={activeType === 'Refrigerator' ? "active my-1" : 'my-1'} onClick={() => setActiveType('Refrigerator')}>Refrigerators</Button>
                     <Button className={activeType === 'Range' ? "active my-1" : 'my-1'} onClick={() => setActiveType('Range')}>Ranges</Button>
@@ -49,21 +49,22 @@ const FeaturedProductsPage = () => {
                     <Button className={activeType === 'Garbage' ? "active my-1" : 'my-1'} onClick={() => setActiveType('Garbage')}>Garbage Disposals</Button>
                 </div>
             </Row>
-            <Row className=''>
+            <Row className='d-flex justify-content-between my-5 appliance-search-container'>
  
-                <motion.div layout className='d-inline-flex flex-wrap'>
-
+                <motion.div layout className='d-flex flex-wrap justify-content-center'>
+                    <AnimatePresence className='bg-primary'>
                     {filteredKitchenAppliances.length > 0 ? 
-                        <AnimatePresence>
-                            {filteredKitchenAppliances.map((appliance)=> {
+                        
+                            filteredKitchenAppliances.map((appliance)=> {
                                 return ( 
-                                    <Col>
+                                    <Col className='d-flex justify-content-center m-0 p-0'>
                                         <Card_Appliance key={appliance.model} title={appliance.name} subtitle={appliance.model} image={appliance.image} link={appliance.link} description={appliance.features} />
                                     </Col>    
                                 ) 
-                            })}
-                    </AnimatePresence>
+                            })
+                        
                     : <p className='mx-auto'>Hmm...Looks like we don't have any appliances that match your filter</p>}
+                    </AnimatePresence>
                 </motion.div>
             </Row>
         </Container>

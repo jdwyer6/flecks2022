@@ -26,7 +26,7 @@ const FeaturedProductsPage = () => {
                 <p>Prices and availability are subject to change. Please contact our store for up-to-date pricing, sales, and special offers.</p>
             </Row>
             <Row>
-                <img src={HeroImage} className='kitchen-hero-image'></img>
+                <img src={HeroImage} className='featured-product-hero-image'></img>
             </Row>
             <Row className='mt-5'>
                 <h4>Search and filter</h4>
@@ -46,16 +46,19 @@ const FeaturedProductsPage = () => {
                 </div>
             </Row>
 
-            <Row>
-                <motion.div layout className='d-inline-flex justify-content-evenly flex-wrap'>
-                    <AnimatePresence>
+            <Row className='d-flex justify-content-between my-5'>
+                {<motion.div layout className='d-inline-flex justify-content-between flex-wrap'>
+                    <AnimatePresence> 
                         {filteredAppliances.map((appliance)=> {
                             return (
-                                <Card_Appliance key={appliance.model} title={appliance.name} subtitle={appliance.model} image={appliance.image} link={appliance.link} description={appliance.features} />
+                                <Col className='d-flex justify-content-center m-0 p-0'>
+                                    <Card_Appliance key={appliance.model} title={appliance.name} subtitle={appliance.model} image={appliance.image} link={appliance.link} description={appliance.features} />
+                                </Col>
+                                
                             )
                     })}
-                    </AnimatePresence>
-                </motion.div>
+                    </AnimatePresence> 
+                </motion.div>}
             </Row>
         </Container>
      );

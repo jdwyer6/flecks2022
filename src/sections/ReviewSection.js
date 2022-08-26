@@ -9,7 +9,7 @@ const ReviewsSection = () => {
             <Row>
                 <h1 className='text-center my-4'>Latest Testimonials</h1>
             </Row>
-            <Row>
+            <Row className='review-cards'>
                 <ReviewCard 
                     title={'They really care'} 
                     message={'Flecks flat out knows their products. They were very professional, friendly and had clearly installed appliances a time or two. Leveled everything, test ran, checked everything twice and cleaned up thoroughly. You want quality service at competitive prices? This is your store. Could not have been happier.'} 

@@ -9,10 +9,10 @@ const Card_Appliance = ({title, subtitle, image, link, description}) => {
             inital={{ opacity: 0}}
             exit={{ opacity: 0}}
             >
-            <Card className='mx-auto my-3 p-3 border-0 card-appliance' style={{width: '20rem'}}>
+            <Card className='my-3 p-0 mx-1 card-appliance'>
                 <CardSubtitle className="mb-2 text-muted text-center">{subtitle}</CardSubtitle>
 
-                <img alt="Sample" src={image}/>
+                <img className='p-3' alt="Sample" src={image}/>
 
                 <CardBody className='d-flex justify-content-center flex-column'>
                     <CardTitle tag="h5" className='text-center'>

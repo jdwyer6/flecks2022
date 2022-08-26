@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PagesCard = ({title, subtitle, image, link}) => {
     return ( 
-        <Card className='mx-auto my-3 rounded-0 p-3'
+        <Card className='my-3 rounded-0 p-3'
         style={{
             width: '18rem'
         }}

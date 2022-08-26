@@ -4,15 +4,16 @@ $color-gray-light: rgb(243, 243, 243);
 $color-gray-dark: rgb(192, 192, 192);
 $color-yellow: rgb(228, 170, 44);
 
+$margin-y-large: 8rem auto;
+
 *{
     font-family: 'Roboto', sans-serif;
 
 }
 
-
 .hero-image{
     width: 100%;
-    height: 65vh;
+    height: 30rem;
     object-fit: cover;
     background-image: linear-gradient(to right, rgba(105, 105, 105, 0), rgba(124, 124, 124, 0)), url('./images/hero.jpg');
     background-size: 100%;
@@ -26,7 +27,7 @@ $color-yellow: rgb(228, 170, 44);
 }
 
 .brand-title{
-    font-family: 'Oooh Baby', cursive;
+    font-family: 'Oooh Baby', 'Roboto', sans-serif;
 }
 
 .card{
@@ -35,12 +36,12 @@ $color-yellow: rgb(228, 170, 44);
 }
 
 .history-container{
-    margin: 20vh auto;
+    margin: $margin-y-large;
 }
 
 .review-card{
     border: 1px solid $color-gray-dark;
-    margin: 1vw;
+    // margin: 1vw;
     padding: 2rem;
     span{
         width: 100%;
@@ -56,16 +57,30 @@ $color-yellow: rgb(228, 170, 44);
 }
 
 .review-section{
-    margin: 20vh auto;
+    margin: $margin-y-large;
 
     h1{
         font-family: 'Oooh Baby', cursive;
     }
 }
 
+.review-cards >* {
+    margin: 1vw;
+
+    &:first-child{
+        margin: 1vw 1vw 1vw 0;
+    }
+
+    &:last-child{
+        margin: 1vw 0 1vw 1vw;
+    }
+}
+
+
+
 .card-appliance{
     border: none;
-
+    width: 18rem;
     .card-body{
 
         .card-title{
@@ -82,16 +97,35 @@ $color-yellow: rgb(228, 170, 44);
     }
 }
 
-.kitchen-hero-image{
+.featured-product-hero-image{
     width: 100%;
-    height: 50vh;
+    height: 25rem;
     object-fit: cover;
 }
 
+.featured-product-section-container{
+    margin: $margin-y-large;
+}
 
+.mobile-brand{
+    font-size: 100%;
+}
 
-@media only screen and (min-width: 1800px) {
-    .card {
-      min-width: 20vw;
+// @media only screen and (min-width: 1800px) {
+//     .card {
+//       min-width: 20vw;
+//     }
+// }
+
+@media only screen and (min-width: 770px){
+    .disappear-on-large{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 770px){
+ 
+    .disappear-on-small{
+        display: none;
     }
 }
