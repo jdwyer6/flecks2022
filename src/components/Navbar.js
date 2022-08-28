@@ -42,10 +42,12 @@ const Navigation = (args) => {
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>Featured Products</DropdownToggle>
                                 <DropdownMenu end>
-                                    <DropdownItem>Option 1</DropdownItem>
-                                    <DropdownItem>Option 2</DropdownItem>
-                                    <DropdownItem divider />
-                                    <DropdownItem>Reset</DropdownItem>
+                                    <div className='d-flex flex-column px-2'>
+                                        <Link  className='text-decoration-none text-black fw-light'to='/KitchenPage'>Kitchen</Link>
+                                        <Link className='text-decoration-none text-black fw-light' to='/LaundryPage'>Laundry</Link>
+                                        <Link className='text-decoration-none text-black fw-light' to='/ACPage'>AC</Link>
+                                        <Link className='text-decoration-none text-black fw-light' to='/PopularPage'>Most Popular</Link>
+                                    </div>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                             <NavItem>
@@ -70,11 +72,11 @@ const Navigation = (args) => {
                         </DropdownToggle>
                         <DropdownMenu>
                             <div className='d-flex flex-column px-2'>
-                            <Link  className='text-decoration-none text-black fw-light'to='/KitchenPage'>Kitchen</Link>
-                            <Link className='text-decoration-none text-black fw-light' to='/LaundryPage'>Laundry</Link>
-                            <Link className='text-decoration-none text-black fw-light' to='/ACPage'>AC</Link>
-                            <DropdownItem divider />
-                            <Link className='text-decoration-none text-black fw-light' to='/PopularPage'>Most Popular</Link>
+                                <Link  className='text-decoration-none text-black fw-light'to='/KitchenPage'>Kitchen</Link>
+                                <Link className='text-decoration-none text-black fw-light' to='/LaundryPage'>Laundry</Link>
+                                <Link className='text-decoration-none text-black fw-light' to='/ACPage'>AC</Link>
+                                <DropdownItem divider />
+                                <Link className='text-decoration-none text-black fw-light' to='/PopularPage'>Most Popular</Link>
                             </div>
 
                         </DropdownMenu>

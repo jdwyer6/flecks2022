@@ -5,6 +5,7 @@ $color-gray-dark: rgb(192, 192, 192);
 $color-yellow: rgb(228, 170, 44);
 
 $margin-y-large: 8rem auto;
+$margin-y-small: 4rem auto;
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -121,11 +122,22 @@ $margin-y-large: 8rem auto;
     .disappear-on-large{
         display: none;
     }
+
 }
 
 @media only screen and (max-width: 770px){
  
     .disappear-on-small{
         display: none;
+    }
+
+    .small-device-margins{
+        margin: $margin-y-small;
+    }
+
+    .hero-image{
+        background-image: linear-gradient(to right, rgba(105, 105, 105, 0), rgba(124, 124, 124, 0)), url('./images/home-hero-mobile.jpg');
+        height: 60vh;
+        margin-top: 1rem;
     }
 }

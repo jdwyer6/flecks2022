@@ -18,6 +18,16 @@ const ContactPage = () => {
                     <p>Florissant, MO 63031</p>
                 </Col>
                 <Col className='text-center'>
+                    <h3>Hours</h3>
+                    <p className='my-0'>Monday: 10:00 - 6:30</p>
+                    <p className='my-0'>Tuesday: Closed</p>
+                    <p className='my-0'>Wednesday: 10:00 - 6:30</p>
+                    <p className='my-0'>Thursday: Closed</p>
+                    <p className='my-0'>Friday: 10:00 - 6:30</p>
+                    <p className='my-0'>Saturday: 10:00 - 3:00</p>
+                    <p className='my-0'>Sunday: Closed</p>
+                </Col>
+                <Col className='text-center'>
                     <h3>Phone</h3>
                     <p>314-837-3611</p>
                 </Col>

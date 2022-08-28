@@ -101,6 +101,14 @@
   .disappear-on-small {
     display: none;
   }
+  .small-device-margins {
+    margin: 4rem auto;
+  }
+  .hero-image {
+    background-image: linear-gradient(to right, rgba(105, 105, 105, 0), rgba(124, 124, 124, 0)), url("./images/home-hero-mobile.jpg");
+    height: 60vh;
+    margin-top: 1rem;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

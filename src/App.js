@@ -4,6 +4,8 @@ import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import KitchenPage from './pages/KitchenPage';
 import LaundryPage from './pages/LaundryPage';
+import ACPage from './pages/ACPage';
+import PopularPage from './pages/PopularPage';
 import './App.css';
 
 
@@ -22,6 +24,12 @@ function App() {
                     </Route>
                     <Route path='/LaundryPage'>
                         <LaundryPage />
+                    </Route>
+                    <Route path='/ACPage'>
+                        <ACPage />
+                    </Route>
+                    <Route path='/PopularPage'>
+                        <PopularPage />
                     </Route>
                     <Route path='/ContactPage'>
                         <ContactPage />

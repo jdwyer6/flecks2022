@@ -10,6 +10,17 @@ import Oven_PTS700LSNSS from '../images/Ovens/Oven_PTS700LSNSS.jpg';
 import Cooktop_PHP9036DJBB from '../images/Cooktops/Cooktop_PHP9036DJBB.webp';
 import Cooktop_PP7030DJBB from '../images/Cooktops/Cooktop_PP7030DJBB.webp';
 import Cooktop_PHP9036SJSS from '../images/Cooktops/Cooktop_PHP9036SJSS.webp';
+import PDT755SYRFS from '../images/Dishwashers/PDT755SYRFS.jpg';
+import PDP755SYRFS from '../images/Dishwashers/PDP755SYRFS.jpg';
+import PDT715SYNFS from '../images/Dishwashers/PDT715SYNFS.jpg';
+//Microwaves
+import PVM9225SRSS from '../images/Microwaves/PVM9225SRSS.jpg';
+import PVM9179DRWW from '../images/Microwaves/PVM9179DRWW.jpg';
+import PVM9179DRBB from '../images/Microwaves/PVM9179DRBB.jpg';
+//Disposers
+import GREEN05P from '../images/Disposers/GREEN05P.webp';
+import GFB760N from '../images/Disposers/GFB760N.jpg';
+import GFC1020N from '../images/Disposers/GFC1020N.jpg';
 
 const KITCHENAPPLIANCES = [
     //Refrigerators
@@ -112,15 +123,81 @@ const KITCHENAPPLIANCES = [
         link: 'https://www.geappliances.com/appliance/GE-Profile-36-Built-In-Touch-Control-Induction-Cooktop-PHP9036SJSS',
         image: Cooktop_PHP9036SJSS
     },
-    // {
-    //     name: '',
-    //     type: '',
-    //     model: '',
-    //     features: '',
-    //     link: '',
-    //     image: ''
-    // },
-
+    //Dishwashers
+    {
+        name: 'GE Profile™ UltraFresh System Dishwasher with Stainless Steel Interior',
+        type: 'Dishwasher',
+        model: 'PDT755SYRFS',
+        features: 'Microban™ Antimicrobial Technology, UltraFresh System, Steam + Sani, Dimensions: 34 H x 23 3/4 W x 24 D',
+        link: 'https://www.geappliances.com/appliance/GE-Profile-UltraFresh-System-Dishwasher-with-Stainless-Steel-Interior-PDT755SYRFS',
+        image: PDT755SYRFS
+    },
+    {
+        name: 'GE Profile™ UltraFresh System Dishwasher with Stainless Steel Interior',
+        type: 'Dishwasher',
+        model: 'PDP755SYRFS',
+        features: 'Microban™ Antimicrobial Technology, UltraFresh System, Steam + Sani, Dimensions: 34 H x 23 3/4 W x 24 D',
+        link: 'https://www.geappliances.com/appliance/GE-Profile-UltraFresh-System-Dishwasher-with-Stainless-Steel-Interior-PDP755SYRFS',
+        image: PDP755SYRFS
+    },
+    {
+        name: 'GE Profile™ Fingerprint Resistant Top Control with Stainless Steel Interior Dishwasher with Sanitize Cycle & Dry Boost with Fan Assist',
+        type: 'Dishwasher',
+        model: 'PDT715SYNFS',
+        features: 'Dry Boost™ with Fan Assist-Dry, Deep Clean Silverware Jets, Built-In Third Rack, Dimensions: 34 H x 23 3/4 W x 24 D',
+        link: 'https://www.geappliances.com/appliance/GE-Profile-Fingerprint-Resistant-Top-Control-with-Stainless-Steel-Interior-Dishwasher-with-Sanitize-Cycle-Dry-Boost-with-Fan-Assist-PDT715SYNFS',
+        image: PDT715SYNFS
+    },
+    //Microwaves
+    {
+        name: 'GE Profile™ 2.2 Cu. Ft. Over-the-Range Sensor Microwave Oven',
+        type: 'Microwave',
+        model: 'PVM9225SRSS',
+        features: 'Extendable Slide-Out Vent, Sensor Cooking Controls, 2.2 cu. ft. Capacity, Dimensions: 17 1/4 H x 29 7/8 W x 15 9/16 D',
+        link: 'https://www.geappliances.com/appliance/GE-Profile-2-2-Cu-Ft-Over-the-Range-Sensor-Microwave-Oven-PVM9225SRSS',
+        image: PVM9225SRSS
+    },
+    {
+        name: 'GE Profile™ 1.7 Cu. Ft. Convection Over-the-Range Microwave Oven',
+        type: 'Microwave',
+        model: 'PVM9179DRWW',
+        features: 'Air Fry, 1.7 cu. ft. capacity, Fast Cook, Dimensions: 16 5/16 H x 29 7/8 W x 17 1/4 D',
+        link: 'https://www.geappliances.com/appliance/GE-Profile-1-7-Cu-Ft-Convection-Over-the-Range-Microwave-Oven-PVM9179DRWW',
+        image: PVM9179DRWW
+    },
+    {
+        name: 'GE Profile™ 1.7 Cu. Ft. Convection Over-the-Range Microwave Oven',
+        type: 'Microwave',
+        model: 'PVM9179DRBB',
+        features: 'Air Fry, 1.7 cu. ft. capacity, Fast Cook, Dimensions: 16 5/16 H x 29 7/8 W x 17 1/4 D',
+        link: 'https://www.geappliances.com/appliance/GE-Profile-1-7-Cu-Ft-Convection-Over-the-Range-Microwave-Oven-PVM9179DRBB',
+        image: PVM9179DRBB
+    },
+    // Disposers
+    {
+        name: 'GE® 1/2 HP Disposall Green Continuous Feed Garbage Disposer Corded',
+        type: 'Garbage',
+        model: 'GREEN05P',
+        features: 'Finer Grind, Jam-Free Guarantee Disposal, Recycle Your Food Waste, Dimensions: 13 1/2 H x 6 1/7 W x 6 1/7 D',
+        link: 'https://www.geappliances.com/appliance/GE-1-2-HP-Disposall-Green-Continuous-Feed-Garbage-Disposer-Corded-GREEN05P',
+        image: GREEN05P
+    },
+    {
+        name: 'GE® 3/4 HP Batch Feed Garbage Disposer Non-Corded',
+        type: 'Garbage',
+        model: 'GFB760N',
+        features: '3/4 HP Motor, Over 2,700 RPM, Easy Installation, Dimensions: 16 5/8 H x 8 1/2 W x 8 1/2 D',
+        link: 'https://www.geappliances.com/appliance/GE-3-4-HP-Batch-Feed-Garbage-Disposer-Non-Corded-GFB760N',
+        image: GFB760N
+    },
+    {
+        name: 'GE® 1 HP Continuous Feed Garbage Disposer Non-Corded',
+        type: 'Garbage',
+        model: 'GFC1020N',
+        features: '1 HP Motor, Over 2,800 RPM, Easy Installation, Dimensions: 14 1/2 H x 8 1/2 W x 8 1/2 D',
+        link: 'https://www.geappliances.com/appliance/GE-1-HP-Continuous-Feed-Garbage-Disposer-Non-Corded-GFC1020N',
+        image: GFC1020N
+    },
 ]
 
 export default KITCHENAPPLIANCES;
