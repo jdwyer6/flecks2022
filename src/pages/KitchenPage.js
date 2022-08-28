@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import HeroImage from '../images/kitchen_hero.jpg'
 
-const FeaturedProductsPage = () => {
+const KitchenPage = () => {
     const [kitchenAppliances, setKitchenAppliances] = useState(KITCHENAPPLIANCES);
     const [filteredKitchenAppliances, setFilteredKitchenAppliances] = useState([]);
     const [activeType, setActiveType] = useState('All');
@@ -71,4 +71,4 @@ const FeaturedProductsPage = () => {
      );
 }
  
-export default FeaturedProductsPage;
+export default KitchenPage;

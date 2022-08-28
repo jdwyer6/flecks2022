@@ -54,7 +54,7 @@ const KITCHENAPPLIANCES = [
         type: 'Range',
         model: 'PGB965BPTS',
         features: 'No Preheat Air Fry, Reversible grill and griddle, True Convection with Precise Air, Dimensions: 47 1/4 H x 30 W x 29 1/4 D',
-        link: 'https://www.geappliances.com/appliance/GE-Double-Door-Compact-Refrigerator-GDE03GGKBB',
+        link: 'https://www.geappliances.com/appliance/GE-Profile-30-Free-Standing-Gas-Double-Oven-Convection-Range-with-No-Preheat-Air-Fry-PGB965BPTS',
         image: Range_PGB965BPTS
     },
     {
