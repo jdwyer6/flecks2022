@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/flecks2022/static/css/main.294abc49.css",
-    "main.js": "/flecks2022/static/js/main.f9dbad54.js",
+    "main.js": "/flecks2022/static/js/main.a42a447c.js",
     "static/media/contact_image.jpg": "/flecks2022/static/media/contact_image.555076b83a1a048deb1f.jpg",
     "static/media/hero.jpg": "/flecks2022/static/media/hero.4f18711f8117f63755cf.jpg",
     "static/media/thumbnail_refrigerator.jpg": "/flecks2022/static/media/thumbnail_refrigerator.d825342ec6fcd390ddfa.jpg",
@@ -53,10 +53,10 @@
     "static/media/GUD27GSSMWW.webp": "/flecks2022/static/media/GUD27GSSMWW.4676338bab7906e14325.webp",
     "index.html": "/flecks2022/index.html",
     "main.294abc49.css.map": "/flecks2022/static/css/main.294abc49.css.map",
-    "main.f9dbad54.js.map": "/flecks2022/static/js/main.f9dbad54.js.map"
+    "main.a42a447c.js.map": "/flecks2022/static/js/main.a42a447c.js.map"
   },
   "entrypoints": [
     "static/css/main.294abc49.css",
-    "static/js/main.f9dbad54.js"
+    "static/js/main.a42a447c.js"
   ]
 }
