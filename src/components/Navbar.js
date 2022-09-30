@@ -37,7 +37,7 @@ const Navigation = (args) => {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="me-auto" navbar>
                             <NavItem>
-                                <NavLink href="/components/">Home</NavLink>
+                                <NavLink href="/">Home</NavLink>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>Featured Products</DropdownToggle>

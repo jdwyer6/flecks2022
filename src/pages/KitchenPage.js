@@ -26,7 +26,7 @@ const KitchenPage = () => {
                 <p>Prices and availability are subject to change. Please contact our store for up-to-date pricing, sales, and special offers.</p>
             </Row>
             <Row>
-                <img src={HeroImage} className='featured-product-hero-image'></img>
+                <img src={HeroImage} className='featured-product-hero-image' style={{objectPosition: '0'}}></img>
             </Row>
             <Row className='mt-5'>
                 <h4>Search and filter</h4>
@@ -51,10 +51,9 @@ const KitchenPage = () => {
             </Row>
             <Row className='d-flex justify-content-between my-5 appliance-search-container'>
  
-                <motion.div layout className='d-flex flex-wrap justify-content-center'>
-                    <AnimatePresence className='bg-primary'>
+                <div layout className='d-flex flex-wrap justify-content-center'>
+
                     {filteredKitchenAppliances.length > 0 ? 
-                        
                             filteredKitchenAppliances.map((appliance)=> {
                                 return ( 
                                     <Col className='d-flex justify-content-center m-0 p-0'>
@@ -64,8 +63,7 @@ const KitchenPage = () => {
                             })
                         
                     : <p className='mx-auto'>Hmm...Looks like we don't have any appliances that match your filter</p>}
-                    </AnimatePresence>
-                </motion.div>
+                </div>
             </Row>
         </Container>
      );

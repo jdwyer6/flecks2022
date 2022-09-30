@@ -3,7 +3,7 @@ import { BsStarFill } from 'react-icons/bs';
 
 const ReviewCard = ({title, message, author, icon}) => {
     return ( 
-        <Col className='d-flex flex-column px-5 review-card'>
+        <Col className='d-flex flex-column px-5 m-3 review-card'>
             <span className='text-center my-3'>
                 <BsStarFill className='mx-1 star'/><BsStarFill className='mx-1 star'/><BsStarFill className='mx-1 star'/><BsStarFill className='mx-1 star'/><BsStarFill className='mx-1 star'/>
             </span>

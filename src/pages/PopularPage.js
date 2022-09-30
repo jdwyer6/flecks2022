@@ -35,8 +35,7 @@ const FeaturedProductsPage = () => {
                     </div>
                 </Col>
                 <Col className='d-flex justify-content-between'>
-                    {<motion.div layout className='d-inline-flex justify-content-between flex-wrap'>
-                        <AnimatePresence> 
+                    <div layout className='d-inline-flex justify-content-between flex-wrap'>
                             {filteredAppliances.map((appliance)=> {
                                 return (
                                     <Col className='d-flex justify-content-center m-0 p-0'>
@@ -45,8 +44,7 @@ const FeaturedProductsPage = () => {
 
                                 )
                             })}
-                        </AnimatePresence> 
-                    </motion.div>}
+                    </div>
                 </Col>
             </Row>
 

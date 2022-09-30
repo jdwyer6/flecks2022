@@ -1,7 +1,7 @@
 import { Card, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-const PagesCard = ({title, subtitle, image, link}) => {
+const Card_FeaturedProduct = ({title, subtitle, image, link}) => {
     return ( 
         <Card className='my-3 rounded-0 p-3'
         style={{
@@ -33,4 +33,4 @@ const PagesCard = ({title, subtitle, image, link}) => {
      );
 }
  
-export default PagesCard;
+export default Card_FeaturedProduct;

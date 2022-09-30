@@ -47,18 +47,15 @@ const FeaturedProductsPage = () => {
             </Row>
 
             <Row className='d-flex justify-content-between my-5'>
-                {<motion.div layout className='d-inline-flex justify-content-between flex-wrap'>
-                    <AnimatePresence> 
+                <div layout className='d-inline-flex justify-content-between flex-wrap'>
                         {filteredAppliances.map((appliance)=> {
                             return (
                                 <Col className='d-flex justify-content-center m-0 p-0'>
                                     <Card_Appliance key={appliance.model} title={appliance.name} subtitle={appliance.model} image={appliance.image} link={appliance.link} description={appliance.features} />
-                                </Col>
-                                
+                                </Col>  
                             )
                     })}
-                    </AnimatePresence> 
-                </motion.div>}
+                </div>
             </Row>
         </Container>
      );
