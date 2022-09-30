@@ -111,6 +111,10 @@ input.form-control:focus {
 .featured-product-section-container {
   margin: 8rem auto;
 }
+.featured-product-section-container div {
+  display: flex;
+  justify-content: space-between;
+}
 
 .mobile-brand {
   font-size: 100%;
@@ -132,6 +136,10 @@ input.form-control:focus {
     background-image: linear-gradient(to right, rgba(105, 105, 105, 0), rgba(124, 124, 124, 0)), url("./images/home-hero-mobile.jpg");
     height: 60vh;
     margin-top: 1rem;
+  }
+  .featured-product-section-container div {
+    display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 992px) {

@@ -5,8 +5,8 @@ import KitchenPage from './pages/KitchenPage';
 import LaundryPage from './pages/LaundryPage';
 import ACPage from './pages/ACPage';
 import PopularPage from './pages/PopularPage';
+import Footer from './components/Footer';
 import './App.css';
-import { render } from 'react-dom';
 import { Route, Routes } from "react-router-dom";
 
 
@@ -23,6 +23,7 @@ function App() {
                 <Route path='/PopularPage' element={<PopularPage />} ></Route>
                 <Route path='/ContactPage' element={<ContactPage />} ></Route>
             </Routes>
+            <Footer />
         </div>
     );
 }

@@ -130,6 +130,11 @@ input.form-control{
 
 .featured-product-section-container{
     margin: $margin-y-large;
+
+    div{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .mobile-brand{
@@ -164,6 +169,15 @@ input.form-control{
         background-image: linear-gradient(to right, rgba(105, 105, 105, 0), rgba(124, 124, 124, 0)), url('./images/home-hero-mobile.jpg');
         height: 60vh;
         margin-top: 1rem;
+    }
+
+    .featured-product-section-container{
+
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        
     }
 
 }

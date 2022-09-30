@@ -25,28 +25,28 @@ const FeaturedProductsPage = () => {
                 <h1>Most Popular Products</h1>
                 <p>Prices and availability are subject to change. Please contact our store for up-to-date pricing, sales, and special offers.</p>
             </Row>
-            <Row className='my-5'>
-                <Col md='3' className='d-flex align-items-start'>
+            {/* <Row className='my-5'> */}
+                {/* <Col md='3' className='d-flex align-items-start'>
                     <div className='my-3 d-flex justify-content-center flex-wrap flex-column filter-container'>
                         <Button style={{width:'10rem', height: '3rem'}} className={activeType === 'All' ? "active mx-3 my-1" : 'mx-3 my-1'} onClick={() => setActiveType('All')}>All</Button>
                         <Button style={{width:'10rem', height: '3rem'}} className={activeType === 'Washer' ? "active mx-3 my-1" : 'mx-3 my-1'} onClick={() => setActiveType('Washer')}>Washers</Button>
                         <Button style={{width:'10rem', height: '3rem'}} className={activeType === 'Dryer' ? "active mx-3 my-1" : 'mx-3 my-1'} onClick={() => setActiveType('Dryer')}>Dryers</Button>
                         <Button style={{width:'10rem', height: '3rem'}} className={activeType === 'Stacked' ? "active mx-3 my-1" : 'mx-3 my-1'} onClick={() => setActiveType('Stacked')}>Stacked Combos</Button>
                     </div>
-                </Col>
-                <Col className='d-flex justify-content-between'>
+                </Col> */}
+                <div className='d-flex justify-content-between'>
                     <div layout className='d-inline-flex justify-content-between flex-wrap'>
                             {filteredAppliances.map((appliance)=> {
                                 return (
-                                    <Col className='d-flex justify-content-center m-0 p-0'>
+                                    <Col className='d-flex justify-content-center my-5 p-0'>
                                         <PopularApplianceCard key={appliance.model} title={appliance.name} subtitle={appliance.model} imageOption0={appliance.image[0]} imageOption1={appliance.image[1]} imageOption2={appliance.image[2]} link={appliance.link} description={appliance.features} />
                                     </Col>
 
                                 )
                             })}
                     </div>
-                </Col>
-            </Row>
+                </div>
+            {/* </Row> */}
 
 
         </Container>
